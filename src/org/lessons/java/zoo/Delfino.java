@@ -1,8 +1,11 @@
 package org.lessons.java.zoo;
 
-public class Delfino extends Animale{
+import java.security.spec.RSAOtherPrimeInfo;
 
-    //METODI
+public class Delfino extends Animale implements Nuotatore{
+
+    //METODI -----------------------------
+    //da Animale
     @Override
     public void verso() {
         System.out.println("Delfiiiiin");
@@ -12,4 +15,9 @@ public class Delfino extends Animale{
         System.out.println("tante cose buone");
     }
 
+    //da Nuotatore
+    @Override
+    public void nuota() {
+        System.out.println("Sto nuotando!!!");
+    }
 }
